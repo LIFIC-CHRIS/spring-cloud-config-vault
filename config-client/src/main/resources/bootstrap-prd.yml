@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: member
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8101
+      name: ${spring.application.name},message.member,message.common
